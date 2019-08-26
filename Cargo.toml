@@ -13,7 +13,8 @@ documentation = "https://docs.rs/libloading/"
 version = "1.0"
 
 [target.'cfg(windows)'.dependencies.winapi]
-version = "0.3"
+git = "https://github.com/hankbao/winapi-rs.git"
+branch = "iphlpapi-support"
 features = [
     "winerror",
     "errhandlingapi",
